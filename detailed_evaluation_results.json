@@ -1,0 +1,41 @@
+{
+  "config": {
+    "confidence_threshold": 0.1,
+    "min_area": 10,
+    "iou_thresholds": [
+      0.5
+    ]
+  },
+  "dataset_stats": {
+    "processed_images": 110,
+    "images_with_segmentation_gt": 110
+  },
+  "detection_metrics": {
+    "overall": {
+      "precision": 0.16145833333333334,
+      "recall": 0.2605042016806723,
+      "f1_score": 0.19935691318327975,
+      "true_positives": 31,
+      "false_positives": 161,
+      "false_negatives": 88,
+      "total_ground_truth": 119
+    },
+    "average_per_image": {
+      "precision": 0.21424242424242423,
+      "recall": 0.25000000000000006,
+      "f1_score": 0.22441558441558443
+    },
+    "mAP": {
+      "AP@0.50": 0.09030580914418675
+    }
+  },
+  "segmentation_metrics": {
+    "average": {
+      "dice_coefficient": 0.4210628817115203,
+      "pixel_accuracy": 0.9664409264940871,
+      "precision": 0.4750189401331973,
+      "recall": 0.6039111180349096,
+      "f1_score": 0.42106255965306183
+    }
+  }
+}

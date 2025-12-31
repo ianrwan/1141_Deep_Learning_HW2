@@ -1,0 +1,7 @@
+# 忽略 temp-docs 資料夾（包含所有內容）
+KSDD2/
+
+# 忽略所有 PowerPoint 檔案
+*.pptx
+*.pptm
+*.ppt

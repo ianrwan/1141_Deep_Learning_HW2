@@ -1,0 +1,32 @@
+KSDD2 Dataset Evaluation Results
+==================================================
+Total images evaluated: 110
+Images with segmentation GT: 110
+Confidence threshold: 0.1
+Minimum area: 10
+IoU thresholds for mAP: [0.5]
+
+DETECTION METRICS:
+  Overall Precision: 0.1615
+  Overall Recall: 0.2605
+  Overall F1-Score: 0.1994
+  True Positives: 31
+  False Positives: 161
+  False Negatives: 88
+  Total Ground Truth: 119
+
+  Average per-image metrics:
+    Precision: 0.2142
+    Recall: 0.2500
+    F1-Score: 0.2244
+
+  mAP METRICS:
+    AP@0.50: 0.0903
+    Average mAP: 0.0903
+
+SEGMENTATION METRICS (Average):
+  Dice Coefficient: 0.4211
+  Pixel Accuracy: 0.9664
+  Precision: 0.4750
+  Recall: 0.6039
+  F1-Score: 0.4211
