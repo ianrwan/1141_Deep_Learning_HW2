@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparison Viewer</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-images"></i> Image Comparison Viewer</h1>
+            <p class="subtitle">Original Images vs Different Threshold Processing Results</p>
+        </header>
+
+        <div class="current-image-info">
+            <h2>Current Image ID: <span id="current-id">20042</span></h2>
+        </div>
+
+        <div class="image-grid">
+            <div class="image-card">
+                <h3>Original Image</h3>
+                <div class="image-container">
+                    <img id="original-img" src="" alt="Original Image">
+                </div>
+                <p class="image-filename" id="original-filename"></p>
+            </div>
+
+            <div class="image-card">
+                <h3>Threshold 0.1 Result</h3>
+                <div class="image-container">
+                    <img id="thresh01-img" src="" alt="Threshold 0.1 Result">
+                </div>
+                <p class="image-filename" id="thresh01-filename"></p>
+            </div>
+
+            <div class="image-card">
+                <h3>Threshold 0.3 Result</h3>
+                <div class="image-container">
+                    <img id="thresh03-img" src="" alt="Threshold 0.3 Result">
+                </div>
+                <p class="image-filename" id="thresh03-filename"></p>
+            </div>
+
+            <div class="image-card">
+                <h3>Threshold 0.5 Result</h3>
+                <div class="image-container">
+                    <img id="thresh05-img" src="" alt="Threshold 0.5 Result">
+                </div>
+                <p class="image-filename" id="thresh05-filename"></p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn" class="btn btn-prev">
+                <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            
+            <button id="reset-btn" class="btn btn-reset">
+                <i class="fas fa-redo"></i> Return to First (20042)
+            </button>
+            
+            <button id="next-btn" class="btn btn-next">
+                Next <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="navigation">
+            <h3>Quick Navigation</h3>
+            <div id="id-list" class="id-list">
+                <!-- ID buttons will be dynamically generated here -->
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <h3><i class="fas fa-info-circle"></i> Instructions</h3>
+            <ul>
+                <li>Use "Previous" and "Next" buttons to browse all images</li>
+                <li>Click "Return to First" to go back to image ID 20042</li>
+                <li>Click ID buttons below to jump to a specific image</li>
+                <li>Click on any image to view it enlarged</li>
+                <li>Use keyboard arrows (← →) to navigate, Home to return to first</li>
+            </ul>
+        </div>
+
+        <!-- Image modal for enlarged view -->
+        <div id="image-modal" class="modal">
+            <span class="close-modal">&times;</span>
+            <img class="modal-content" id="modal-img">
+            <div id="modal-caption"></div>
+        </div>
+
+        <footer>
+            <p>Deep Learning Homework 2 - Image Processing Viewer</p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
